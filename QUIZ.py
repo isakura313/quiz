@@ -14,3 +14,10 @@ class Window:
         self.display.title(title)
         self.display.geometry(self.size)
         self.display.resizable(0,0)
+
+    def start(self):
+        self.display.mainloop()
+
+if __name__ == '__main__':
+    game = Window()
+    game.start()
