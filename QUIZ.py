@@ -76,8 +76,11 @@ class CreatorPlayerFrame(Frame):
 
     def choose_player_picture(self):
         self.path_to_photo = filedialog.askopenfilename(
-
+            master = self.frame, title = "Выберете авку игрока", filetype=(('Image files', '*.png *.jpg *.jpeg *.gif'),)
         )
+        photo = ImageTk.PhotoImage(Image.open(self.path_to_photo).resize((350, 350), Image.ANTIALIAS))
+        self.photo.configure(image= photo)
+        self.photo.image = photo
 
 if __name__ == '__main__':
     game = Window()
