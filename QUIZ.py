@@ -49,6 +49,13 @@ class Frame:
             background_label.image = image
             background_label.place(x=0, y = 0, relwidth = 1, relheight = 1)
 
+
+class CreatorPlayerFrame(Frame):
+    def __init__(self, window, title, background_image = None):
+        super().__init__(window, title, background_image)
+
+
+
 if __name__ == '__main__':
     game = Window()
     game.start()
