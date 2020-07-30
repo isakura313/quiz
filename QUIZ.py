@@ -82,6 +82,9 @@ class CreatorPlayerFrame(Frame):
         self.photo.configure(image= photo)
         self.photo.image = photo
 
+    def create_player(self):
+        player = player_class
+
 if __name__ == '__main__':
     game = Window()
     game.start()
