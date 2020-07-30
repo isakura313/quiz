@@ -75,7 +75,9 @@ class CreatorPlayerFrame(Frame):
         self.gender_field.place(relx = 0.01, rely = 0.25, anchor = tk.NW)
 
     def choose_player_picture(self):
-        self.path_to
+        self.path_to_photo = filedialog.askopenfilename(
+
+        )
 
 if __name__ == '__main__':
     game = Window()
