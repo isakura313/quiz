@@ -72,6 +72,7 @@ class CreatorPlayerFrame(Frame):
         gender_label.place(relx = 0.01, rely = 0.2, anchor = tk.NW)
         #Создание списка выбора пола
         self.gender_field = ttk.Combobox(self.frame, value = ['Мужской', 'Женский'])
+        self.gender_field.place(relx = 0.01, rely = 0.25, anchor = tk.NW)
 
 
 
