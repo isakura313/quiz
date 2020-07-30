@@ -74,12 +74,8 @@ class CreatorPlayerFrame(Frame):
         self.gender_field = ttk.Combobox(self.frame, value = ['Мужской', 'Женский'])
         self.gender_field.place(relx = 0.01, rely = 0.25, anchor = tk.NW)
 
-
-
-
-
-
-
+    def choose_player_picture(self):
+        self.path_to
 
 if __name__ == '__main__':
     game = Window()
