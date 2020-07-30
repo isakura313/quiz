@@ -54,6 +54,12 @@ class CreatorPlayerFrame(Frame):
     def __init__(self, window, title, background_image = None):
         super().__init__(window, title, background_image)
 
+        #Создание подписи для поля ввода имени
+        name_label = ttk.Label(self.frame, text="Имя игрока: ")
+        name_label.place(relx = 0.01, rely = 0.01, anchor = tk.NW)
+
+
+
 
 
 if __name__ == '__main__':
