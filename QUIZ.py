@@ -83,7 +83,9 @@ class CreatorPlayerFrame(Frame):
         self.photo.image = photo
 
     def create_player(self):
-        player = player_class
+        player = player_class.Player(
+            self.name_field.get(), int(self.age_field.get()), self.gender_field.get(), self.path_to_photo
+        )
 
 if __name__ == '__main__':
     game = Window()
