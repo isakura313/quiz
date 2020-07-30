@@ -58,6 +58,24 @@ class CreatorPlayerFrame(Frame):
         name_label = ttk.Label(self.frame, text="Имя игрока: ")
         name_label.place(relx = 0.01, rely = 0.01, anchor = tk.NW)
 
+        self.name_field = ttk.Entry(self.frame)
+        self.name_field.place(relx = 0.01, rely = 0.05, anchor = tk.NW)
+        #подпись для ввода возраста игрока
+        age_label = ttk.Label(self.frame, text = "Возраст игрока")
+        age_label.place(relx = 0.01, rely = 0.1, anchor = tk.NW)
+
+        self.age_field = ttk.Entry(self.frame)
+        self.age_field.place(relx = 0.01, rely = 0.15, anchor = tk.NW)
+
+        #создание подписи для списка выбора пола игрока
+        gender_label = ttk.Label(self.frame, text = "Пол игрока..")
+        gender_label.place(relx = 0.01, rely = 0.2, anchor = tk.NW)
+        #Создание списка выбора пола
+        self.gender_field = ttk.Combobox(self.frame, value = ['Мужской', 'Женский'])
+
+
+
+
 
 
 
