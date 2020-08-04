@@ -18,6 +18,10 @@ class Window:
         self.display.geometry(self.size)
         self.display.resizable(0,0)
 
+        self.frames = {'create_player':
+                       CreatorPlayerFrame(self, 'Создать нового игрока', 'images/background1.png')}
+        self.activate_frame('create_player')
+
     def start(self):
         self.display.mainloop()
 
