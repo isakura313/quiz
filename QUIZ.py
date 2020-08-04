@@ -42,7 +42,7 @@ class Frame:
         self.frame.tkraise()
 
     def change_title(self):
-        self.frame.title(self.title)
+        self.frame.master.title(self.title)
 
     def set_background_image(self, background_image):
         if background_image:
