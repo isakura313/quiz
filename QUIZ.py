@@ -30,8 +30,6 @@ class Window:
         self.frames['main'] = MainFrame(self, "Main", player, 'question_ids', 'images/background2.png')
 
 
-
-
     def activate_frame(self, frame_name):
         frame = self.frames[frame_name]
         frame.activate()
@@ -100,8 +98,9 @@ class CreatorPlayerFrame(Frame):
 
     def create_player(self):
         player = player_class.Player(
-            self.name_field.get(), int(self.age_field.get()), self.gender_field.get(), self.path_to_photo
-        )
+            self.name_field.get(), int(self.age_field.get()), self.gender_field.get(), self.path_to_photo)
+        self.window.create_main_frame(player)
+        self.window.activate_frame('main')
 
 class MainFrame(Frame):
     def __init__(self, window,  title, player, question_ids, background_image = None):
