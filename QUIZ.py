@@ -16,7 +16,7 @@ class Window:
         self.display = tk.Tk()
         self.display.title(title)
         self.display.geometry(self.size)
-        self.display.resizable(0,0)
+        self.display.resizable(0, 0)
 
         self.frames = {'create_player':
                        CreatorPlayerFrame(self, 'Создать нового игрока', 'images/background1.png')}
@@ -24,6 +24,11 @@ class Window:
 
     def start(self):
         self.display.mainloop()
+
+    def activate_frame(self, frame_name):
+        frame = self.frames[frame_name]
+        frame.activate()
+        frame.change_title()
 
 class Frame:
     """ Класс, в котором сменяются картинки"""
