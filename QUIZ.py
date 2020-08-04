@@ -96,6 +96,18 @@ class CreatorPlayerFrame(Frame):
             self.name_field.get(), int(self.age_field.get()), self.gender_field.get(), self.path_to_photo
         )
 
+class MainFrame(Frame):
+    def __init__(self, window,  title, player, question_ids, background_image = None):
+        super().__init__(window, title, background_image)
+
+        photo = ImageTk.PhotoImage(Image.open(player.path_to_image).resize((300), Image.ANTIALIAS))
+        player_photo = ttk.Label(self.frame, )
+
+
+
+
+
+
 if __name__ == '__main__':
     game = Window()
     game.start()
