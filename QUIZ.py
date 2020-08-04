@@ -106,6 +106,8 @@ class MainFrame(Frame):
         player_photo.place(relx = 0.5, rely = 0.3, anchor = tk.CENTER)
         player_name = ttk.Label(self.frame, text = f"Имя: {player.name}", width = 40)
         player_name.place(relx =0.5, rely = 0.65, anchor = tk.CENTER)
+        player_age = ttk.Label(self.frame, text = f"Возраст: {player.age}", width = 40)
+        player_age.place(relx =0.5, rely = 0.7, anchor = tk.CENTER)
 
 
 
