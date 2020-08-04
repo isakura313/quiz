@@ -25,6 +25,13 @@ class Window:
     def start(self):
         self.display.mainloop()
 
+    # функция создания главного кадра
+    def create_main_frame(self, player):
+        self.frames['main'] = MainFrame(self, "Main", player, 'question_ids', 'images/background2.png')
+
+
+
+
     def activate_frame(self, frame_name):
         frame = self.frames[frame_name]
         frame.activate()
