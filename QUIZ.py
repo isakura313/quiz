@@ -102,6 +102,10 @@ class MainFrame(Frame):
 
         photo = ImageTk.PhotoImage(Image.open(player.path_to_image).resize((300), Image.ANTIALIAS))
         player_photo = ttk.Label(self.frame, image = photo, borderwidth = 2, relief = tk.RAISED)
+        player_photo.image = photo
+        player_photo.place(relx = 0.5, rely = 0.3, anchor = tk.CENTER)
+        player_name = ttk.Label(self.frame, text = f"Имя: {player.name}", width = 40)
+        player_name.place(relx =0.5, rely = 0.65, anchor = tk.CENTER)
 
 
 
