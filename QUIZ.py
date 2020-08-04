@@ -101,7 +101,7 @@ class MainFrame(Frame):
         super().__init__(window, title, background_image)
 
         photo = ImageTk.PhotoImage(Image.open(player.path_to_image).resize((300), Image.ANTIALIAS))
-        player_photo = ttk.Label(self.frame, )
+        player_photo = ttk.Label(self.frame, image = photo, borderwidth = 2, relief = tk.RAISED)
 
 
 
