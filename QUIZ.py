@@ -109,6 +109,10 @@ class MainFrame(Frame):
         player_age = ttk.Label(self.frame, text = f"Возраст: {player.age}", width = 40)
         player_age.place(relx =0.5, rely = 0.7, anchor = tk.CENTER)
 
+        player_gender = ttk.Label(self.frame, text = f"Пол: {player.gender}", width = 40)
+        player_gender.place(relx =0.5, rely = 0.75, anchor = tk.CENTER)
+
+
 
 
 
