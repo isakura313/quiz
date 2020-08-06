@@ -169,8 +169,12 @@ class MainFrame(Frame):
 class QuestionFrame(Frame):
     def __init__(self, window, question_id, question,
                  answers, path_to_image, background_image = None):
+        title = f'Question #{question_id}'
         super().__init__(window, title, background_image)
-
+        back_button = ttk.Button(self.frame, text = 'Назад', command = self.go_back)
+        back_button.place(relx = 0.5, rely = 0.95, anchor = tk.CENTER)
+    def go_back(self):
+        self.activate_main_frame()
 if __name__ == '__main__':
     game = Window()
     game.start()
