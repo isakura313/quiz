@@ -131,6 +131,8 @@ class MainFrame(Frame):
     def __init__(self, window,  title, player, question_ids, background_image = None):
         super().__init__(window, title, background_image)
 
+        question_ids = ['Cупергерои', ' Minecraft', 'CS GO', 'Кибербезопасность']
+
         photo = ImageTk.PhotoImage(Image.open(player.path_to_image).resize((300), Image.ANTIALIAS))
         player_photo = ttk.Label(self.frame, image = photo, borderwidth = 2, relief = tk.RAISED)
         player_photo.image = photo
@@ -143,6 +145,12 @@ class MainFrame(Frame):
         player_gender = ttk.Label(self.frame, text = f"Пол: {player.gender}", width = 40)
         player_gender.place(relx =0.5, rely = 0.75, anchor = tk.CENTER)
 
+        self.buttons = {}
+        button_positions = [
+            (0.2, 0.85), (0.5, 0.85), (0.8, 0.85),
+            (0.2, 0.9), (0.5, 0.9), (0.8, 0.9),
+            (0.2, 0.95), (0.5, 0.95), (0.8, 0.95),
+        ]
 
 
 
