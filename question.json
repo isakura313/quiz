@@ -1,0 +1,21 @@
+[{
+  "question": "При какой температуре кипит вода?",
+  "answers": {"100":  1, "273": 0, "60":  0, "0":0},
+  "path_to_image": "images/water_to_boil.png"
+},
+{
+  "question": "Как зовут брата Нотча?",
+  "answers": {"Херобрин":  1, "Нет брата": 0, "Стив":  0, "Одиссей":0},
+  "path_to_image": "images/notch.png"
+},
+  {
+  "question": "Как зовут брата Нотча?",
+  "answers": {"Херобрин":  1, "Нет брата": 0, "Стив":  0, "Одиссей":0},
+  "path_to_image": "images/notch.png"
+},
+   {
+  "question": "В каком году вышел Minecraft?",
+  "answers": {"2008":  0, "2009": 1, "2012":  0, "2006":0},
+  "path_to_image": "images/minecraft.png"
+}
+]
