@@ -166,6 +166,11 @@ class MainFrame(Frame):
         question_id = button.id
         self.window.activate_frame(question_id)
 
+class QuestionFrame(Frame):
+    def __init__(self, window, question_id, question,
+                 answers, path_to_image, background_image = None):
+        super().__init__(window, title, background_image)
+
 if __name__ == '__main__':
     game = Window()
     game.start()
