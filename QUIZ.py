@@ -161,8 +161,10 @@ class MainFrame(Frame):
             self.buttons[question_id] = button
 
 
-
-
+    def show_question(self, event):
+        button = event.widget
+        question_id = button.id
+        self.window.activate_frame(question_id)
 
 if __name__ == '__main__':
     game = Window()
