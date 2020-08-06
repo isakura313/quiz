@@ -151,6 +151,11 @@ class MainFrame(Frame):
             (0.2, 0.9), (0.5, 0.9), (0.8, 0.9),
             (0.2, 0.95), (0.5, 0.95), (0.8, 0.95),
         ]
+        for i, question_id in enumerate(question_ids):
+            position = button_positions[i]
+            rel_x, rel_y = position
+            button = ttk.Button(self.frame, text = f"Question #{question_id}", width = 15 )
+
 
 
 
