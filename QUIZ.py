@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import ttk
+import json
+import random
 from PIL import Image, ImageTk
 
 import player_class
@@ -173,8 +175,10 @@ class QuestionFrame(Frame):
         super().__init__(window, title, background_image)
         back_button = ttk.Button(self.frame, text = 'Назад', command = self.go_back)
         back_button.place(relx = 0.5, rely = 0.95, anchor = tk.CENTER)
+
     def go_back(self):
         self.activate_main_frame()
+
 if __name__ == '__main__':
     game = Window()
     game.start()
