@@ -101,7 +101,7 @@ class CreatorPlayerFrame(Frame):
         photo_button.place(relx=0.4, rely=0.65, anchor=tk.NW)
 
         # Создание кнопки для создание игрока.
-        create_button = ttk.Button(self.frame, text='Create player', command=self.create_player)
+        create_button = ttk.Button(self.frame, text='Создать игрока', command=self.create_player)
         create_button.place(relx=0.8, rely=0.95, anchor=tk.NW)
 
     def choose_player_picture(self):
@@ -115,7 +115,7 @@ class CreatorPlayerFrame(Frame):
 
     def choose_player_picture(self):
         self.path_to_photo = filedialog.askopenfilename(
-            master = self.frame, title = "Выберете авку игрока", filetype=(('Image files', '*.png *.jpg *.jpeg *.gif'),)
+            master = self.frame, title = "Выберете авку игрока", defaultextension=(('Image files', '*.png *.jpg *.jpeg *.gif'),)
         )
         photo = ImageTk.PhotoImage(Image.open(self.path_to_photo).resize((350, 350), Image.ANTIALIAS))
         self.photo.configure(image= photo)
@@ -142,8 +142,6 @@ class MainFrame(Frame):
 
         player_gender = ttk.Label(self.frame, text = f"Пол: {player.gender}", width = 40)
         player_gender.place(relx =0.5, rely = 0.75, anchor = tk.CENTER)
-
-
 
 
 
