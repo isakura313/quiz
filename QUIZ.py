@@ -154,7 +154,11 @@ class MainFrame(Frame):
         for i, question_id in enumerate(question_ids):
             position = button_positions[i]
             rel_x, rel_y = position
-            button = ttk.Button(self.frame, text = f"Question #{question_id}", width = 15 )
+            button = ttk.Button(self.frame, text = f"Question #{question_id}", width = 15)
+            button.id = question_id
+            button.bind('<Button-1>', self.show_question)
+            button.place(relx = rel_x, rely = rel_y, anchor = tk.CENTER)
+            self.buttons[question_id] = button
 
 
 
