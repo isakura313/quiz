@@ -31,7 +31,7 @@ class Window:
     def create_main_frame(self, player):
         self.frames['main'] = MainFrame(self, "Main", player, 'question_ids', 'images/background2.png')
 
-
+        #мы остановились здесь
     def activate_frame(self, frame_name):
         frame = self.frames[frame_name]
         frame.activate()
